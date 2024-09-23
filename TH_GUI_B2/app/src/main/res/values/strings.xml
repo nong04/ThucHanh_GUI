@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TH_GUI_B2</string>
+    <string name="f">Fahrenheit</string>
+    <string name="c">Celsius</string>
+    <string name="ftoc">Convert to Celsius</string>
+    <string name="ctof">Convert to Fahrenheit</string>
+    <string name="clear">Clear</string>
+</resources>

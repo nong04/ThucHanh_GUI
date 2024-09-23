@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#4CAF50"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/txtTitle"
+            android:textColor="#0D47A1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ten -->
+        <TableRow
+            android:id="@+id/rowTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/txtTen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textSize="20sp"
+                android:text="@string/txtTen" />
+
+            <EditText
+                android:id="@+id/editTen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Nguyễn Văn A"
+                android:inputType="text"
+                android:minHeight="48dp" />
+        </TableRow>
+
+        <!--Chieu Cao-->
+        <TableRow
+            android:id="@+id/rowChieuCao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/txtChieuCao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textSize="20sp"
+                android:text="@string/txtChieuCao" />
+
+            <EditText
+                android:id="@+id/editChieuCao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="1.75"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+        </TableRow>
+
+        <!--Can Nang-->
+        <TableRow
+            android:id="@+id/rowCanNang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/txtCanNang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textSize="20sp"
+                android:text="@string/txtCanNang" />
+
+            <EditText
+                android:id="@+id/editCanNang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="70"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+        </TableRow>
+
+        <!--Tinh BMI-->
+        <Button
+            android:id="@+id/btnTinhBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/btnTinhBMI" />
+
+        <!--BMI-->
+        <TableRow
+            android:id="@+id/rowBMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/txtBMI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textSize="20sp"
+                android:text="@string/txtBMI" />
+
+            <TextView
+                android:id="@+id/editBMI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="bottom"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <!--Chan Doan-->
+        <TableRow
+            android:id="@+id/rowChanDoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/txtChanDoan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textSize="20sp"
+                android:text="@string/txtChanDoan" />
+
+            <TextView
+                android:id="@+id/editChanDoan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="bottom"
+                android:textSize="30sp" />
+        </TableRow>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

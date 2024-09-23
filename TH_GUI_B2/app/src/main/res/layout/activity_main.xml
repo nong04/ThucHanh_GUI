@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.corn/tools"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txtF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/f" />
+    <EditText
+        android:id="@+id/tbF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:autofillHints=""
+        android:layout_weight="1"
+        android:gravity="center"
+        android:hint="98.6"
+        android:inputType="numberDecimal"
+        tools2:ignore="HardcodedText,NestedWeights" />
+    <TextView
+        android:id="@+id/txtC"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/c" />
+    <EditText
+        android:id="@+id/tbC"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:autofillHints=""
+        android:layout_weight="1"
+        android:gravity="center"
+        android:hint="37"
+        android:inputType="numberDecimal"
+        tools2:ignore="HardcodedText,NestedWeights" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btnFToC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/ftoc"
+            tools2:ignore="NestedWeights,VisualLintButtonSize" />
+        <Button
+            android:id="@+id/btnCToF"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/ctof"
+            tools2:ignore="NestedWeights,VisualLintButtonSize" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/clear"
+        tools2:ignore="NestedWeights,VisualLintButtonSize" />
+</LinearLayout>

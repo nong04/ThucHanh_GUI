@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TH_GUI_B3</string>
+    <string name="txtTitle">CHƯƠNG TRÌNH TÍNH CHỈ SỐ BMI</string>
+    <string name="txtTen">Nhập tên:</string>
+    <string name="txtChieuCao">Chiều cao (m):</string>
+    <string name="txtCanNang">Cân nặng (kg):</string>
+    <string name="txtBMI">BMI=</string>
+    <string name="txtChanDoan">Chẩn đoán:</string>
+    <string name="btnTinhBMI">Tính BMI</string>
+</resources>

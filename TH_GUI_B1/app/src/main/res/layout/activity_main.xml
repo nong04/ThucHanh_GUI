@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.corn/tools"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtA"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/a" />
+
+        <EditText
+            android:id="@+id/tbA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="5"
+            android:inputType="number"
+            tools2:ignore="HardcodedText,NestedWeights" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/txtB"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/b" />
+        <EditText
+            android:id="@+id/tbB"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="3"
+            android:inputType="number"
+            tools2:ignore="HardcodedText,NestedWeights" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:hint="8"
+        android:text="@string/result"
+        tools2:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:text="@string/plus"
+        tools2:ignore="NestedWeights,VisualLintButtonSize" />
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/minus"
+        tools2:ignore="NestedWeights,VisualLintButtonSize" />
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/multiply"
+        tools2:ignore="NestedWeights,VisualLintButtonSize" />
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/divide"
+        tools2:ignore="NestedWeights,VisualLintButtonSize" />
+    <Button
+        android:id="@+id/btnGDivisor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/gDivisor"
+        tools2:ignore="NestedWeights,VisualLintButtonSize" />
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/exit"
+        tools2:ignore="NestedWeights,VisualLintButtonSize" />
+</LinearLayout>
